@@ -1,0 +1,53 @@
+:root{
+    --background_dark:#080705;
+    --background_ligth:#fffffa;
+    --btn_nav_dark:#2176ff;
+    --btn_nav_ligth:#53ff45;
+    --color_dark:var(--background_ligth);
+    --color_ligth:var(--background_dark)
+}
+
+
+html, body{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ min-width: 100%;
+ min-height: 100vh;
+ font-family: "Ubuntu", sans-serif;
+}
+
+/* dark */
+
+.dark{
+  background:var(--background_dark);
+  color: var(--color_dark);
+}
+
+.dark a{
+  color: var(--color_dark);
+  text-decoration: none;
+  font-size: 23px;
+}
+
+a:hover{
+  text-decoration: underline 2px;
+}
+
+
+/* ligth */
+
+.ligth{
+  background:var(--background_ligth);
+  color: var(--color_ligth);
+}
+
+.ligth a{
+  color: var(--color_ligth);
+  text-decoration: none;
+  font-size: 23px;
+}
+
+a:hover{
+  text-decoration: underline 2px;
+}

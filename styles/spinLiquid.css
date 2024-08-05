@@ -1,0 +1,315 @@
+/* <a href="https://iconscout.com/3d-illustrations/computor-update" class="text-underline font-size-sm" target="_blank">Computor Update</a> by <a href="https://iconscout.com/contributors/sanket-birajdar" class="text-underline font-size-sm">Tekuma studio</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> */
+
+.center {
+  position: relative;
+  width: 100%;
+}
+
+.ball {
+  position: relative;
+  top: 20%;
+  left: 15%;
+}
+
+.blubb-1 {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 100px;
+  height: 100vh;
+   z-index: 1;
+}
+
+#img_test {
+  width: 400%;
+  
+  /* filter: hue-rotate(180deg); mudar cor de png */
+}
+
+.sparkle-1 {
+  position: absolute;
+  top: 50px;
+  left: 38px;
+  width: 8px;
+  height: 8px;
+  transform: rotate(250deg);
+  z-index: 0;
+}
+
+.sparkle-1:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border-radius: 50%;
+  z-index: 0;
+  transform-origin: 58px 58px;
+  animation: rotate 3.7s ease-in-out 1.8s infinite;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../public/skills/mysql.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-2 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 9px;
+  height: 9px;
+  transform: rotate(149deg);
+  z-index: 0;
+}
+
+.sparkle-2:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 56px 56px;
+  -webkit-animation: rotate 3.9s ease-in-out 0.4s infinite;
+  animation: rotate 3.9s ease-in-out 0.4s infinite;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../public/skills/mongo-db.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-3 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(107deg);
+  z-index: 0;
+}
+
+.sparkle-3:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 54px 54px;
+  -webkit-animation: rotate 4.1s ease-in-out 0.6s infinite;
+  animation: rotate 4.1s ease-in-out 0.6s infinite;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../public/skills/sass.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-4 {
+  position: absolute;
+  top: 50px;
+  left: 38px;
+  width: 11px;
+  height: 11px;
+  transform: rotate(220deg);
+  z-index: 0;
+}
+
+.sparkle-4:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 52px 52px;
+  animation: rotate 4.3s ease-in-out 0.8s infinite;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../public/skills/react.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-5 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(190deg);
+  z-index: 0;
+}
+
+.sparkle-5:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 50px 50px;
+  animation: rotate 4.5s ease-in-out 3s infinite;
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  background: url("../public/skills/nodejs.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-6 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 13px;
+  height: 13px;
+  transform: rotate(175deg);
+  z-index: 0;
+}
+
+.sparkle-6:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 48px 48px;
+  animation: rotate 4.7s ease-in-out 1.2s infinite;
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../public/skills/typescript.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-7 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 14px;
+  height: 14px;
+  transform: rotate(229deg);
+  z-index: 0;
+}
+
+.sparkle-7:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 46px 46px;
+  animation: rotate 4.9s ease-in-out 1.4s infinite;
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../public/skills/github.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-8 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(90deg);
+  z-index: 0;
+}
+
+.sparkle-8:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 70px 70px;
+  animation: rotate 5.1s ease-in-out 2.3s infinite;
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../public/skills/css.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-9 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(267deg);
+  z-index: 0;
+}
+
+.sparkle-9:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transform-origin: 50px 60px;
+  animation: rotate 5.3s ease-in-out 1.8s infinite;
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../public/skills/html.png") no-repeat center center;
+  background-size: contain;
+}
+
+.sparkle-10 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  width: 17px;
+  height: 17px;
+  transform: rotate(170deg);
+  z-index: 0;
+  width: 30px;
+  height: 30px;
+}
+.sparkle-10:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: #fff;
+  transform-origin: 50px 60px;
+  animation: rotate 5.5s ease-in-out 2.5s infinite;
+  width: 30px;
+  height: 30px;
+  background: url("../public/skills/bootstrap-framework.png") no-repeat center
+    center;
+  background-size: contain;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  to {
+    transform: rotate(360deg) translate3d(0, 0, 0);
+  }
+}
