@@ -1,8 +1,8 @@
 :root{
-    --background_dark:#080705;
+    --background_dark:#303030;
     --background_ligth:#fffffa;
-    --btn_nav_dark:#2176ff;
-    --btn_nav_ligth:#53ff45;
+    --btn_dark:#000000;
+    --btn_ligth:#53ff45;
     --color_dark:var(--background_ligth);
     --color_ligth:var(--background_dark)
 }
@@ -50,4 +50,17 @@ a:hover{
 
 a:hover{
   text-decoration: underline 2px;
+}
+
+
+.dark button{
+  background: var(--btn_dark);
+  color: var(--color_dark);
+  border: none;
+  border-radius: 10%;
+  font-size: 23px;
+}
+
+.ligth button{
+  color: var(--color_ligth);
 }

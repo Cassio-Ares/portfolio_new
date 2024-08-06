@@ -314,6 +314,7 @@
 }
 
 #skill_css:hover {
+  transition: all 12s ease;
   animation: jello-horizontal 0.9s both;
 }
 
@@ -342,6 +343,7 @@
 }
 
 #skill_js:hover {
+  transition: all 2s ease;
   animation: rotate-scale-up 1s linear both;
 }
 
@@ -361,6 +363,7 @@
 }
 
 #skill_ts:hover {
+  transition: all 2s ease;
   animation: flip 1.2s linear both;
 }
 
@@ -388,7 +391,8 @@
 }
 
 #skill_react:hover {
-  animation: slide-out-elliptic-left-bck 0.7s ease-in both;
+  transition: all 1s ease;
+  animation: slide-out-elliptic-left-bck 1s ease-in both;
 }
 
 @keyframes slide-out-elliptic-left-bck {
@@ -411,7 +415,8 @@
 }
 
 #skill_sass:hover {
-  animation: scale-up-bottom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transition: all 2s ease;
+  animation: scale-up-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @keyframes scale-up-bottom {
@@ -428,6 +433,7 @@
 }
 
 #skill_mongo:hover {
+  transition: all 2s ease;
   animation: rotate-diagonal-tr 1s linear both;
 }
 

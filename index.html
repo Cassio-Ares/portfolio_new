@@ -3,9 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!--js-->
     <script src="./js/darkLigth.js"></script>
     <!--styles-->
@@ -13,6 +16,8 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/spinLiquid.css" />
     <link rel="stylesheet" href="./styles/hover.css" />
+    <link rel="stylesheet" href="./styles/btns.css" />
+    <link rel="stylesheet" href="./styles/icons.css" />
     <title>Portfolio</title>
   </head>
   <body class="dark">
@@ -23,7 +28,7 @@
         <a href="#">projetos</a>
         <a href="#">contato</a>
       </div>
-      <div>
+      <div id="nav_btn">
         <button id="toggle_btn">dark/ligth</button>
         <button>lang</button>
       </div>
@@ -39,29 +44,26 @@
             excelência técnica e a simplicidade elegante.
           </p>
 
-          <p id="about_text_one">Meu objetivo é transformar ideias em realidade através do
-            código.
-            </p>
-          
-          <p id="about_text_end">
-              Vamos construir algo incrível juntos!
+          <p id="about_text_one">
+            Meu objetivo é transformar ideias em realidade através do código.
           </p>
-        
         </div>
         <div class="center">
-          <div class="blubb-1"><img id="img_test" src="./public/Computer.png" alt=""> </div> 
-         <div class="ball">
-          <div class="sparkle-1"></div>
-          <div class="sparkle-2"></div>
-          <div class="sparkle-3"></div>
-          <div class="sparkle-4"></div>
-          <div class="sparkle-5"></div>
-          <div class="sparkle-6"></div>
-          <div class="sparkle-7"></div>
-          <div class="sparkle-8"></div>
-          <div class="sparkle-9"></div>
-          <div class="sparkle-10"></div>
-         </div> 
+          <div class="blubb-1">
+            <img id="img_test" src="./public/Computer.png" alt="" />
+          </div>
+          <div class="ball">
+            <div class="sparkle-1"></div>
+            <div class="sparkle-2"></div>
+            <div class="sparkle-3"></div>
+            <div class="sparkle-4"></div>
+            <div class="sparkle-5"></div>
+            <div class="sparkle-6"></div>
+            <div class="sparkle-7"></div>
+            <div class="sparkle-8"></div>
+            <div class="sparkle-9"></div>
+            <div class="sparkle-10"></div>
+          </div>
         </div>
       </div>
 
@@ -102,48 +104,82 @@
             </div>
           </div>
         </div>
-            <div>
-              <figure class="figure_skills">
-                  <img id="skill_css" class="img_skills" src="./public/skills/css.png" alt="JavaScript" />
-                  <figcaption>CSS</figcaption>
-                </figure>
-              </div>
-           <div>
-              <figure  class="figure_skills">
-                <img id="skill_js" class="img_skills" src="./public/skills/nodejs.png" alt="JavaScript" />
-                <figcaption>JavaScript</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure class="figure_skills">
-                <img id="skill_ts" class="img_skills" src="./public/skills/typescript.png" alt="JavaScript" />
-                <figcaption>TypeScript</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure class="figure_skills">
-                <img id="skill_react" class="img_skills" src="./public/skills/react.png" alt="JavaScript" />
-                <figcaption>React</figcaption>
-              </figure>
-            </div>
-            <div>
-              <figure id="skill_sass" class="figure_skills">
-                  <img  class="img_skills" src="./public/skills/sass.png" alt="JavaScript" />
-                  <figcaption>SASS</figcaption>
-                </figure>
-              </div>
-              <div>
-                <figure class="figure_skills">
-                    <img id="skill_mongo" class="img_skills" src="./public/skills/mongo-db.png" alt="JavaScript" />
-                    <figcaption>MongoDB</figcaption>
-                  </figure>
-                </div>
-                <div>
-                  <figure class="figure_skills">
-                      <img id="skill_mysql" class="img_skills" src="./public/skills/mysql.png" alt="JavaScript" />
-                      <figcaption>MySql</figcaption>
-                    </figure>
-                  </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_css"
+              class="img_skills"
+              src="./public/skills/css.png"
+              alt="JavaScript"
+            />
+            <figcaption>CSS</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_js"
+              class="img_skills"
+              src="./public/skills/nodejs.png"
+              alt="JavaScript"
+            />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_ts"
+              class="img_skills"
+              src="./public/skills/typescript.png"
+              alt="JavaScript"
+            />
+            <figcaption>TypeScript</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_react"
+              class="img_skills"
+              src="./public/skills/react.png"
+              alt="JavaScript"
+            />
+            <figcaption>React</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure id="skill_sass" class="figure_skills">
+            <img
+              class="img_skills"
+              src="./public/skills/sass.png"
+              alt="JavaScript"
+            />
+            <figcaption>SASS</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_mongo"
+              class="img_skills"
+              src="./public/skills/mongo-db.png"
+              alt="JavaScript"
+            />
+            <figcaption>MongoDB</figcaption>
+          </figure>
+        </div>
+        <div>
+          <figure class="figure_skills">
+            <img
+              id="skill_mysql"
+              class="img_skills"
+              src="./public/skills/mysql.png"
+              alt="JavaScript"
+            />
+            <figcaption>MySql</figcaption>
+          </figure>
+        </div>
       </div>
 
       <!--projects-->
@@ -156,12 +192,45 @@
           />
         </div>
         <div class="description_project">
-         <h3 class="title">Titulo do projeto</h3>
-         <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere excepturi eligendi voluptate repellat quidem accusamus. Sint et dolorem laudantium iure voluptates officia, voluptas nostrum accusamus? Maxime quam eos omnis ad.</p>
-         <span class="tecnologias"></span>
+          <h3 class="title">
+            Site para praticar lógica e métodos em JavaScript
+          </h3>
+          <p class="description">
+            Projeto de um site para praticar e aprender lógica e métodos em
+            JavaScript com desafios práticos e interativos. O editor de código
+            permite que você escreva e teste suas soluções diretamente no
+            navegador. Ao lado do editor, há uma seleção de desafios com três
+            soluções exemplares e um guia básico sobre os métodos e funções mais
+            utilizados. Explore, aprenda e domine JavaScript de forma divertida
+            e desafiadora.
+          </p>
+          <div>
+            <h4>Tecnologias</h4>
+            <div class="tecnologias">
+              <span class="icons" id="react">React</span>
+              <span class="icons" id="ts">Typescript</span>
+              <span class="icons" id="material">MaterialUI</span>
+              <span class="icons" id="style">styled-components</span>
+              <span class="icons" id="axios">Axios</span>
+            </div>
+          </div>
         </div>
-        <button>git</button>
       </div>
+      <div>
+        <button class="btn btn_git">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text"> GitHub</span>
+          </a>
+        </button>
+        <button class="btn btn_site">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text">Site</span>
+          </a>
+        </button>
+      </div>
+
       <div class="container_projects">
         <div class="projects">
           <img
@@ -171,11 +240,36 @@
           />
         </div>
         <div class="description_project">
-          <h3 class="title"></h3>
-          <p class="description"></p>
-          <span class="tecnologias"></span>
-         </div>
-        <button>git</button>
+          <h3 class="title">Bem-vindo a meu repositório de Css e Sass</h3>
+          <p class="description">
+            Site criado para demonstrar e proporcionar acesso a um repositório
+            contendo diversas criações e animações em CSS e SASS. E junto a isso
+            me ajudar a praticar e melhorar meus conhecimentos.
+          </p>
+          <div>
+            <h4>Tecnologias</h4>
+            <div class="tecnologias">
+              <span class="icons" id="react">React</span>
+              <span class="icons" id="ts">Typescript</span>
+              <span class="icons" id="css">Css</span>
+              <span class="icons" id="sass">Sass</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn_git">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text"> GitHub</span>
+          </a>
+        </button>
+        <button class="btn btn_site">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text">Site</span>
+          </a>
+        </button>
       </div>
       <div class="container_projects">
         <div class="projects">
@@ -186,35 +280,106 @@
           />
         </div>
         <div class="description_project">
-          <h3 class="title"></h3>
-          <p class="description"></p>
-          <span class="tecnologias"></span>
-         </div>
-        <button>git</button>
+          <h3 class="title">Api de gestão de Academia com MySql</h3>
+          <p class="description">
+            Uma API para o backend de um site de gestão de academia utilizando
+            Express, Knex com MySQL2, bcrypt e JWT. A API gerencia alunos,
+            planos e exercícios de forma eficiente, com segurança garantida por
+            criptografia de senhas e autenticação JWT. A documentação é
+            detalhada e intuitiva, facilitando a integração e o uso da API por
+            desenvolvedores externos. Essa solução assegura uma gestão eficaz e
+            segura das operações de academias
+          </p>
+          <div>
+            <h4>Tecnologias</h4>
+            <div class="tecnologias">
+              <span class="icons" id="react">React</span>
+              <span class="icons" id="js">JavaScript</span>
+              <span class="icons" id="express">Express</span>
+              <span class="icons" id="knex">Knex</span>
+              <span class="icons" id="mysql">MySql</span>
+              <span class="icons" id="jwt">Jsonwebtoken</span>
+              <span class="icons" id="env">DotEnv</span>
+              <span class="icons" id="bcrypt">Bcrypt</span>
+              <span class="icons" id="token">express-bearer-token</span>
+              <span class="icons" id="swagger">Swagger</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn_git">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text"> GitHub</span>
+          </a>
+        </button>
       </div>
       <div class="container_projects">
         <div class="projects">
           <img
             class="img_projects"
-            src="./public/imgProjects/apptest.gif"
+            src="./public/imgProjects/api_ecom.gif"
             alt=""
           />
         </div>
         <div class="description_project">
-          <h3 class="title"></h3>
-          <p class="description"></p>
-          <span class="tecnologias"></span>
-         </div>
-        <button>git</button>
+          <h3 class="title">API de e-commerce com MongoDB</h3>
+          <p class="description">
+            Uma API para o backend de e-commerce completa e segura usando
+            MongoDB com Mongoose, bcrypt e JSON Web Token (JWT). A documentação
+            foi elaborada com Swagger para uma integração fácil e intuitiva. No
+            painel administrativo, é possível cadastrar e precificar produtos,
+            além de gerenciar listas de compra. Para os clientes, a API
+            proporciona uma experiência fluida com busca de produtos,
+            gerenciamento de listas de compra, seleção de formas de pagamento e
+            acompanhamento do status de envio.
+          </p>
+          <div>
+            <h4>Tecnologias</h4>
+            <div class="tecnologias">
+              <span class="icons" id="react">React</span>
+              <span class="icons" id="js">JavaScript</span>
+              <span class="icons" id="express">Express</span>
+              <span class="icons" id="nodemon">Nodemon</span>
+              <span class="icons" id="mongodb">MongoDB</span>
+              <span class="icons" id="mongoose">Mongoose</span>
+              <span class="icons" id="jwt">Jsonwebtoken</span>
+              <span class="icons" id="env">DotEnv</span>
+              <span class="icons" id="bcrypt">Bcrypt</span>
+              <span class="icons" id="swagger">Swagger</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <button>+ projetos</button>
+      <div>
+        <button class="btn btn_git">
+          <a style="text-decoration: none" href="http://" target="_blank">
+            <span class="btn_Skew"></span>
+            <span class="btn_text"> GitHub</span>
+          </a>
+        </button>
+      </div>
+      <button id="pgProjects" class="btn">
+        <a style="text-decoration: none" href="">
+          <span class="btn_Skew"></span>
+          <span class="btn_text"><strong>+</strong> projetos</span>
+        </a>
+      </button>
     </main>
-    <footer>
-      <a href="#">github</a>
-      <a href="">linkdin</a>
-      <a href="">curriculo</a>
-      <a href="">whats</a>
-      <a href="">email</a>
+    <footer id="footer">
+      <div id="footer_icons">
+        <a class="icon_link" href="#"
+          ><img class="icon_footer" src="./public/icons/github.svg" alt=""
+        /></a>
+        <a class="icon_link" href="#"
+          ><img class="icon_footer" src="./public/icons/linkedin.svg" alt=""
+        /></a>
+        <a class="icon_link" href="#"
+          ><img class="icon_footer" src="./public/icons/whatsapp.svg" alt=""
+        /></a>
+      </div>
+      <p id="text_footer">Vamos construir algo incrível juntos!</p>
     </footer>
   </body>
 </html>

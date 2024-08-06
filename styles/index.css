@@ -20,6 +20,14 @@ body {
   justify-content: space-between;
 }
 
+#nav_btn {
+  min-width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3%;
+}
+
 #about {
   position: relative;
   margin-top: 20%;
@@ -75,17 +83,80 @@ body {
   width: 100px;
 }
 
-
 .container_projects {
   margin-top: 80px;
   width: 100%;
-  height: 80vh;
-  border: 2px solid white;
+  height: auto;
   position: relative;
+  border-radius: 10px;
+  background: linear-gradient(315deg, #2b2b2b, #333333);
+  box-shadow: 10px -10px 20px #353535, -10px -10px 20px#4d4d4d,
+    10px 10px 20px #4d4d4d;
 }
 
 .img_projects {
   width: 100%;
   height: auto;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
 }
 
+.description_project {
+  padding: 2%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: -15px;
+}
+
+.description {
+  margin-top: -1%;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.tecnologias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} 
+
+#pgProjects{
+ width: 40%;
+ margin-top: 4%; 
+ margin-bottom: 4%;
+ margin-left: 30%;
+ border-radius: 10px;
+}
+
+#footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 8%;
+}
+
+#footer_icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.icon_link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  margin: 5%;
+}
+
+.icon_footer{
+  width: 100%;
+
+}
