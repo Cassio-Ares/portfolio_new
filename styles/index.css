@@ -28,6 +28,16 @@ body {
   gap: 3%;
 }
 
+#toggle_btn{
+  background: none;
+  cursor: pointer;
+  width: 22%;
+}
+
+#img_toggle{
+  width: 100%;
+}
+
 #about {
   position: relative;
   margin-top: 20%;
