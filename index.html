@@ -11,6 +11,7 @@
     />
     <!--js-->
     <script src="./js/darkLigth.js"></script>
+    <script src="./js/movimento_container.js"></script>
     <!--styles-->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -35,7 +36,7 @@
     </nav>
     <main>
       <!--about-->
-      <div id="about">
+      <div id="about" class="hide">
         <div id="text_about">
           <p id="about_text">
             Olá! Meu nome é Cássio e sou um entusiasta apaixonado por
@@ -70,7 +71,7 @@
       <!--Skills dar movimentos diferentes para cada um -->
       <div id="container_skills">
         <div class="container noselec">
-          <div class="canvas">
+          <div class="canvas figure_skills hideSkill">
             <div class="tracker tr-1"></div>
             <div class="tracker tr-2"></div>
             <div class="tracker tr-3"></div>
@@ -96,16 +97,16 @@
             <div class="tracker tr-23"></div>
             <div class="tracker tr-24"></div>
             <div class="tracker tr-25"></div>
-            <div id="card">
-              <figure class="figure_skills">
+            <div id="card" >
+              <figure>
                 <img class="img_skills" src="./public/skills/html.png" alt="" />
                 <figcaption>HTML</figcaption>
               </figure>
             </div>
           </div>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkill">
+          <figure>
             <img
               id="skill_css"
               class="img_skills"
@@ -115,8 +116,8 @@
             <figcaption>CSS</figcaption>
           </figure>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkill">
+          <figure>
             <img
               id="skill_js"
               class="img_skills"
@@ -126,8 +127,8 @@
             <figcaption>JavaScript</figcaption>
           </figure>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkill">
+          <figure>
             <img
               id="skill_ts"
               class="img_skills"
@@ -137,8 +138,8 @@
             <figcaption>TypeScript</figcaption>
           </figure>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkillRev">
+          <figure>
             <img
               id="skill_react"
               class="img_skills"
@@ -148,8 +149,8 @@
             <figcaption>React</figcaption>
           </figure>
         </div>
-        <div>
-          <figure id="skill_sass" class="figure_skills">
+        <div class="figure_skills hideSkillRev">
+          <figure id="skill_sass">
             <img
               class="img_skills"
               src="./public/skills/sass.png"
@@ -158,8 +159,8 @@
             <figcaption>SASS</figcaption>
           </figure>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkillRev">
+          <figure>
             <img
               id="skill_mongo"
               class="img_skills"
@@ -169,8 +170,8 @@
             <figcaption>MongoDB</figcaption>
           </figure>
         </div>
-        <div>
-          <figure class="figure_skills">
+        <div class="figure_skills hideSkillRev">
+          <figure>
             <img
               id="skill_mysql"
               class="img_skills"
@@ -183,191 +184,202 @@
       </div>
 
       <!--projects-->
-      <div class="container_projects">
-        <div class="projects">
-          <img
-            class="img_projects"
-            src="./public/imgProjects/codeToPratice.gif"
-            alt=""
-          />
-        </div>
-        <div class="description_project">
-          <h3 class="title">
-            Site para praticar lógica e métodos em JavaScript
-          </h3>
-          <p class="description">
-            Projeto de um site para praticar e aprender lógica e métodos em
-            JavaScript com desafios práticos e interativos. O editor de código
-            permite que você escreva e teste suas soluções diretamente no
-            navegador. Ao lado do editor, há uma seleção de desafios com três
-            soluções exemplares e um guia básico sobre os métodos e funções mais
-            utilizados. Explore, aprenda e domine JavaScript de forma divertida
-            e desafiadora.
-          </p>
-          <div>
-            <h4>Tecnologias</h4>
-            <div class="tecnologias">
-              <span class="icons" id="react">React</span>
-              <span class="icons" id="ts">Typescript</span>
-              <span class="icons" id="material">MaterialUI</span>
-              <span class="icons" id="style">styled-components</span>
-              <span class="icons" id="axios">Axios</span>
+      <div class="project_hide">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/codeToPratice.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">
+              Site para praticar lógica e métodos em JavaScript
+            </h3>
+            <p class="description">
+              Projeto de um site para praticar e aprender lógica e métodos em
+              JavaScript com desafios práticos e interativos. O editor de código
+              permite que você escreva e teste suas soluções diretamente no
+              navegador. Ao lado do editor, há uma seleção de desafios com três
+              soluções exemplares e um guia básico sobre os métodos e funções
+              mais utilizados. Explore, aprenda e domine JavaScript de forma
+              divertida e desafiadora.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons" id="react">React</span>
+                <span class="icons" id="ts">Typescript</span>
+                <span class="icons" id="material">MaterialUI</span>
+                <span class="icons" id="style">styled-components</span>
+                <span class="icons" id="axios">Axios</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button class="btn btn_git">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text"> GitHub</span>
-          </a>
-        </button>
-        <button class="btn btn_site">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text">Site</span>
-          </a>
-        </button>
+        <div>
+          <button class="btn btn_git">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+          <button class="btn btn_site">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text">Site</span>
+            </a>
+          </button>
+        </div>
       </div>
 
-      <div class="container_projects">
-        <div class="projects">
-          <img
-            class="img_projects"
-            src="./public/imgProjects/repositCss.gif"
-            alt=""
-          />
-        </div>
-        <div class="description_project">
-          <h3 class="title">Bem-vindo a meu repositório de Css e Sass</h3>
-          <p class="description">
-            Site criado para demonstrar e proporcionar acesso a um repositório
-            contendo diversas criações e animações em CSS e SASS. E junto a isso
-            me ajudar a praticar e melhorar meus conhecimentos.
-          </p>
-          <div>
-            <h4>Tecnologias</h4>
-            <div class="tecnologias">
-              <span class="icons" id="react">React</span>
-              <span class="icons" id="ts">Typescript</span>
-              <span class="icons" id="css">Css</span>
-              <span class="icons" id="sass">Sass</span>
+      <div class="project_hideRev">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/repositCss.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">Bem-vindo a meu repositório de Css e Sass</h3>
+            <p class="description">
+              Site criado para demonstrar e proporcionar acesso a um repositório
+              contendo diversas criações e animações em CSS e SASS. E junto a
+              isso me ajudar a praticar e melhorar meus conhecimentos.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons" id="react">React</span>
+                <span class="icons" id="ts">Typescript</span>
+                <span class="icons" id="css">Css</span>
+                <span class="icons" id="sass">Sass</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button class="btn btn_git">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text"> GitHub</span>
-          </a>
-        </button>
-        <button class="btn btn_site">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text">Site</span>
-          </a>
-        </button>
-      </div>
-      <div class="container_projects">
-        <div class="projects">
-          <img
-            class="img_projects"
-            src="./public/imgProjects/apptest.gif"
-            alt=""
-          />
+        <div>
+          <button class="btn btn_git">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+          <button class="btn btn_site">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text">Site</span>
+            </a>
+          </button>
         </div>
-        <div class="description_project">
-          <h3 class="title">Api de gestão de Academia com MySql</h3>
-          <p class="description">
-            Uma API para o backend de um site de gestão de academia utilizando
-            Express, Knex com MySQL2, bcrypt e JWT. A API gerencia alunos,
-            planos e exercícios de forma eficiente, com segurança garantida por
-            criptografia de senhas e autenticação JWT. A documentação é
-            detalhada e intuitiva, facilitando a integração e o uso da API por
-            desenvolvedores externos. Essa solução assegura uma gestão eficaz e
-            segura das operações de academias
-          </p>
-          <div>
-            <h4>Tecnologias</h4>
-            <div class="tecnologias">
-              <span class="icons" id="react">React</span>
-              <span class="icons" id="js">JavaScript</span>
-              <span class="icons" id="express">Express</span>
-              <span class="icons" id="knex">Knex</span>
-              <span class="icons" id="mysql">MySql</span>
-              <span class="icons" id="jwt">Jsonwebtoken</span>
-              <span class="icons" id="env">DotEnv</span>
-              <span class="icons" id="bcrypt">Bcrypt</span>
-              <span class="icons" id="token">express-bearer-token</span>
-              <span class="icons" id="swagger">Swagger</span>
+      </div>
+
+      <div class="project_hide">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/apptest.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">Api de gestão de Academia com MySql</h3>
+            <p class="description">
+              Uma API para o backend de um site de gestão de academia utilizando
+              Express, Knex com MySQL2, bcrypt e JWT. A API gerencia alunos,
+              planos e exercícios de forma eficiente, com segurança garantida
+              por criptografia de senhas e autenticação JWT. A documentação é
+              detalhada e intuitiva, facilitando a integração e o uso da API por
+              desenvolvedores externos. Essa solução assegura uma gestão eficaz
+              e segura das operações de academias
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons" id="react">React</span>
+                <span class="icons" id="js">JavaScript</span>
+                <span class="icons" id="express">Express</span>
+                <span class="icons" id="knex">Knex</span>
+                <span class="icons" id="mysql">MySql</span>
+                <span class="icons" id="jwt">Jsonwebtoken</span>
+                <span class="icons" id="env">DotEnv</span>
+                <span class="icons" id="bcrypt">Bcrypt</span>
+                <span class="icons" id="token">express-bearer-token</span>
+                <span class="icons" id="swagger">Swagger</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <button class="btn btn_git">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text"> GitHub</span>
-          </a>
-        </button>
-      </div>
-      <div class="container_projects">
-        <div class="projects">
-          <img
-            class="img_projects"
-            src="./public/imgProjects/api_ecom.gif"
-            alt=""
-          />
+        <div>
+          <button class="btn btn_git">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
         </div>
-        <div class="description_project">
-          <h3 class="title">API de e-commerce com MongoDB</h3>
-          <p class="description">
-            Uma API para o backend de e-commerce completa e segura usando
-            MongoDB com Mongoose, bcrypt e JSON Web Token (JWT). A documentação
-            foi elaborada com Swagger para uma integração fácil e intuitiva. No
-            painel administrativo, é possível cadastrar e precificar produtos,
-            além de gerenciar listas de compra. Para os clientes, a API
-            proporciona uma experiência fluida com busca de produtos,
-            gerenciamento de listas de compra, seleção de formas de pagamento e
-            acompanhamento do status de envio.
-          </p>
-          <div>
-            <h4>Tecnologias</h4>
-            <div class="tecnologias">
-              <span class="icons" id="react">React</span>
-              <span class="icons" id="js">JavaScript</span>
-              <span class="icons" id="express">Express</span>
-              <span class="icons" id="nodemon">Nodemon</span>
-              <span class="icons" id="mongodb">MongoDB</span>
-              <span class="icons" id="mongoose">Mongoose</span>
-              <span class="icons" id="jwt">Jsonwebtoken</span>
-              <span class="icons" id="env">DotEnv</span>
-              <span class="icons" id="bcrypt">Bcrypt</span>
-              <span class="icons" id="swagger">Swagger</span>
+      </div>
+
+      <div class="project_hideRev">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/api_ecom.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">API de e-commerce com MongoDB</h3>
+            <p class="description">
+              Uma API para o backend de e-commerce completa e segura usando
+              MongoDB com Mongoose, bcrypt e JSON Web Token (JWT). A
+              documentação foi elaborada com Swagger para uma integração fácil e
+              intuitiva. No painel administrativo, é possível cadastrar e
+              precificar produtos, além de gerenciar listas de compra. Para os
+              clientes, a API proporciona uma experiência fluida com busca de
+              produtos, gerenciamento de listas de compra, seleção de formas de
+              pagamento e acompanhamento do status de envio.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons" id="react">React</span>
+                <span class="icons" id="js">JavaScript</span>
+                <span class="icons" id="express">Express</span>
+                <span class="icons" id="nodemon">Nodemon</span>
+                <span class="icons" id="mongodb">MongoDB</span>
+                <span class="icons" id="mongoose">Mongoose</span>
+                <span class="icons" id="jwt">Jsonwebtoken</span>
+                <span class="icons" id="env">DotEnv</span>
+                <span class="icons" id="bcrypt">Bcrypt</span>
+                <span class="icons" id="swagger">Swagger</span>
+              </div>
             </div>
           </div>
         </div>
+        <div>
+          <button class="btn btn_git">
+            <a style="text-decoration: none" href="http://" target="_blank">
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+        </div>
       </div>
-      <div>
-        <button class="btn btn_git">
-          <a style="text-decoration: none" href="http://" target="_blank">
-            <span class="btn_Skew"></span>
-            <span class="btn_text"> GitHub</span>
-          </a>
-        </button>
-      </div>
-      <button id="pgProjects" class="btn">
+
+      <button class="btn hide" id="pgProjects">
         <a style="text-decoration: none" href="">
           <span class="btn_Skew"></span>
           <span class="btn_text"><strong>+</strong> projetos</span>
         </a>
       </button>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="hide">
       <div id="footer_icons">
         <a class="icon_link" href="#"
           ><img class="icon_footer" src="./public/icons/github.svg" alt=""
