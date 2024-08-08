@@ -20,6 +20,15 @@ body {
   justify-content: space-between;
 }
 
+#nav_pg_projects{
+  margin-top: 3%;
+  min-width: 57%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 #nav_btn {
   min-width: 30%;
   display: flex;
@@ -254,3 +263,14 @@ body {
   transition: all 1.5s;
 }
 
+.img_projects_app{
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  transition: all 2s;
+}
+
+.img_projects_app:hover{
+  height: 80%;
+}
