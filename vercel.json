@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/index.html"
+      },
+      {
+        "src": "/projects",
+        "dest": "projects.html"
+      }
+    ],
+    "static": { "public": "public" }
+  }
