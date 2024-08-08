@@ -98,5 +98,4 @@ window.addEventListener("load", () => {
 
     pg_project.appendChild(buttonContainer); // Adiciona o container dos botões fora de descriptionDiv e containerProjects
   });
-  console.log(pg_project);
 });
