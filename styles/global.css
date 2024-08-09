@@ -1,8 +1,7 @@
 :root{
     --background_dark:#303030;
-    --background_ligth:#fffffa;
+    --background_ligth:#F0E7DB;
     --btn_dark:#000000;
-    --btn_ligth:#53ff45;
     --color_dark:var(--background_ligth);
     --color_ligth:var(--background_dark)
 }
@@ -27,7 +26,7 @@ html, body{
 .dark a{
   color: var(--color_dark);
   text-decoration: none;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 a:hover{
@@ -45,7 +44,6 @@ a:hover{
 .ligth a{
   color: var(--color_ligth);
   text-decoration: none;
-  font-size: 23px;
 }
 
 a:hover{

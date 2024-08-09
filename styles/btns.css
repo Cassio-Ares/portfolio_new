@@ -2,27 +2,31 @@
   position: relative;
   margin-top: 1%;
   padding: 0.5% 1%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-.btn_text{
-    position: relative;
+.btn_text {
+  position: relative;
+  color: aliceblue;
 }
 
 .btn_Skew {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: -1px;
-    left: -8px;
-    width: 0;
-    background: #2176ff;
-    transform: skew(-15deg);
-    transition: all .3s ease;
-  }
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background: #2176ff;
+  transform: skew(-15deg);
+  transition: all 0.3s ease;
+}
 
-  .btn:hover .btn_Skew {
-    width: calc(100% + 15px);
-  }
+.btn:hover .btn_Skew {
+  width: calc(100% + 15px);
+}
 
-  
+.ligth .btn {
+  box-shadow:  5px -5px 7px #605c58,
+  -5px 5px 7px #524c4c;
+}
