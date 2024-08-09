@@ -78,6 +78,7 @@ body {
 #skill_container{
   margin: 30% auto;
   text-align: center;
+  width: 100%;
 }
 
 #title_skill{
