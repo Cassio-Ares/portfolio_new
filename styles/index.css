@@ -83,6 +83,7 @@ body {
 
 #title_skill{
   font-size: 30px;
+  padding-top: 80px;
 }
 
 #container_skills {
@@ -91,7 +92,6 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 80%;
 }
 
 .figure_skills {
