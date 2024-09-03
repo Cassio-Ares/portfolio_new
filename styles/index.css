@@ -1,12 +1,8 @@
-html,
-body {
-  padding: 0 12%;
-}
-
 #nav {
   position: fixed;
+  padding: 0 20%;
   top: 2%;
-  min-width: 58%;
+  min-width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -38,6 +34,11 @@ body {
 
 #img_toggle{
   width: 100%;
+}
+
+.main{
+  overflow: hidden;
+  padding: 0 20%;
 }
 
 #about {
@@ -255,6 +256,7 @@ body {
   filter: blur(15px);
   transform: translateX(-100%);
   transition: all 1.5s;
+  overflow: hidden;
 }
 
 .project_hideRev{
@@ -262,6 +264,7 @@ body {
   filter: blur(15px);
   transform: translateX(100%);
   transition: all 1.5s;
+  overflow: hidden;
 }
 
 .show_upProject {
@@ -271,11 +274,22 @@ body {
   transition: all 1.5s;
 }
 
+.projects_mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_mobile{
+  border-radius: 10px;
+}
+
 
 /* pg_project */
 
 #nav_pg_projects{
-  min-width: 58%;
+  min-width: 60%;
+  padding: 0 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

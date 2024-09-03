@@ -18,91 +18,135 @@
 <span class="icons" id="style">styled-components</span>
 <span class="icons" id="material">MaterialUI</span> */
 
-h4{
+h4 {
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
   margin-bottom: 1%;
   margin-top: -1%;
 }
 
-.icons{
-    padding: 2px 5px;
-    border-radius: 10px;
-    letter-spacing: 1.5px;
+.icons {
+  padding: 2px 5px;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
 }
 
-#js{
-    background: #62af1f;
+.js {
+  background: #62af1f;
+  margin: 0 2px 3px;
 }
 
-#ts{
-    background: #3178C6;
+.ts {
+  background: #3178c6;
+  margin: 0 2px 3px;
 }
 
-#express{
-    background: #bb9c21;
+.express {
+  background: #bb9c21;
+  margin: 0 2px 3px;
 }
 
-#react{
-    background: #3693af;
+.react {
+  background: #3693af;
+  margin: 0 2px 3px;
 }
 
-#swagger{
-    background: #4FA632;
+.swagger {
+  background: #4fa632;
+  margin: 0 2px 3px;
 }
 
-#nodemon{
-    background: #555345;
+.nodemon {
+  background: #555345;
+  margin: 0 2px 3px;
 }
 
-#mongodb{
-    background: #17AD55;
+.mongodb {
+  background: #17ad55;
+  margin: 0 2px 3px;
 }
 
-#mongoose{
-    background: #880000;
+.mongoose {
+  background: #880000;
+  margin: 0 2px 3px;
 }
 
-#jwt{
-    background: #D83DFF;
+.jwt {
+  background: #d83dff;
+  margin: 0 2px 3px;
 }
 
-#env{
-    background: #7e711c;
+.env {
+  background: #7e711c;
+  margin: 0 2px 3px;
 }
 
-#bcrypt{
-    background: #66BBC5;
+.bcrypt {
+  background: #66bbc5;
+  margin: 0 2px 3px;
 }
 
-#knex{
-    background: #E16426;
+.knex {
+  background: #e16426;
+  margin: 0 2px 3px;
 }
 
-#mysql{
-    background: #42759C;
+.mysql {
+  background: #42759c;
+  margin: 0 2px 3px;
 }
 
-#token{
-    background: #CB3837;
+.token {
+  background: #cb3837;
+  margin: 0 2px 3px;
 }
 
-#css{
-    background: #1655A2;
+.css {
+  background: #1655a2;
+  margin: 0 2px 3px;
 }
 
-#sass{
-    background: #C76395;
+.sass {
+  background: #c76395;
+  margin: 0 2px 3px;
 }
 
-#axios{
-    background: #823E91;
+.axios {
+  background: #823e91;
+  margin: 0 2px 3px;
 }
 
-#style{
-    background: #b97767;
+.style {
+  background: #b97767;
+  margin: 0 2px 3px;
 }
 
-#material{
-    background: #0883FF;
+.material {
+  background: #0883ff;
+  margin: 0 2px 3px;
+}
+
+.three {
+  background: #049ef4;
+  margin: 0 2px 3px;
+}
+
+.threeFiber {
+  background: #101417;
+  margin: 0 2px 3px;
+}
+
+.react-native {
+  background: #3c8296;
+  margin: 0 2px 3px;
+}
+
+.expo_go {
+  background: #0f291e;
+  margin: 0 2px 3px;
+}
+
+.react-navigation{
+  background: #414360;
+  margin: 0 2px 3px;
 }

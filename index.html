@@ -35,9 +35,9 @@
         </button>
       </div>
     </nav>
-    <main>
+    <main class="main">
       <!--about-->
-      <div id="about" class="hide">
+      <div id="about">
         <div id="text_about">
           <p id="about_text">
             Olá! Meu nome é Cássio e sou um entusiasta apaixonado por
@@ -71,7 +71,9 @@
 
       <!--Skills dar movimentos diferentes para cada um -->
       <div id="skill_container">
-        <h3 id="title_skill" class="hideSkill">Tecnologias que eu mais utilizo</h3>
+        <h3 id="title_skill" class="hideSkill">
+          Tecnologias que eu mais utilizo
+        </h3>
         <div id="container_skills">
           <div class="container noselec">
             <div class="canvas figure_skills hideSkill">
@@ -218,30 +220,45 @@
             <div>
               <h4>Tecnologias</h4>
               <div class="tecnologias">
-                <span class="icons" id="react">React</span>
-                <span class="icons" id="ts">Typescript</span>
-                <span class="icons" id="material">MaterialUI</span>
-                <span class="icons" id="style">styled-components</span>
-                <span class="icons" id="axios">Axios</span>
+                <span class="icons react">React</span>
+                <span class="icons ts">Typescript</span>
+                <span class="icons material">MaterialUI</span>
+                <span class="icons style">styled-components</span>
+                <span class="icons axios">Axios</span>
               </div>
             </div>
           </div>
         </div>
         <div>
           <button class="btn btn_git">
-            <a style="text-decoration: none" href="https://github.com/Cassio-Ares/coding_practice_site.git" target="_blank">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/coding_practice_site.git"
+              target="_blank"
+            >
               <span class="btn_Skew"></span>
               <span class="btn_text"> GitHub</span>
             </a>
           </button>
           <button class="btn btn_site">
-            <a style="text-decoration: none" href="https://coding-practice-site.vercel.app/" target="_blank">
+            <a
+              style="text-decoration: none"
+              href="https://coding-practice-site.vercel.app/"
+              target="_blank"
+            >
               <span class="btn_Skew"></span>
               <span class="btn_text">Site</span>
             </a>
           </button>
         </div>
       </div>
+
+      <button class="btn hide" id="pgProjects">
+        <a style="text-decoration: none" href="./projectsFront.html">
+          <span class="btn_Skew"></span>
+          <span class="btn_text"><strong>+</strong> Projetos Front-End</span>
+        </a>
+      </button>
 
       <div class="project_hideRev">
         <div class="container_projects">
@@ -262,23 +279,31 @@
             <div>
               <h4>Tecnologias</h4>
               <div class="tecnologias">
-                <span class="icons" id="react">React</span>
-                <span class="icons" id="ts">Typescript</span>
-                <span class="icons" id="css">Css</span>
-                <span class="icons" id="sass">Sass</span>
+                <span class="icons react">React</span>
+                <span class="icons ts">Typescript</span>
+                <span class="icons css">Css</span>
+                <span class="icons sass">Sass</span>
               </div>
             </div>
           </div>
         </div>
         <div>
           <button class="btn btn_git">
-            <a style="text-decoration: none" href="https://github.com/Cassio-Ares/project_to_practice.git" target="_blank">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/project_to_practice.git"
+              target="_blank"
+            >
               <span class="btn_Skew"></span>
               <span class="btn_text"> GitHub</span>
             </a>
           </button>
           <button class="btn btn_site">
-            <a style="text-decoration: none" href="https://project-to-practice.vercel.app/" target="_blank">
+            <a
+              style="text-decoration: none"
+              href="https://project-to-practice.vercel.app/"
+              target="_blank"
+            >
               <span class="btn_Skew"></span>
               <span class="btn_text">Site</span>
             </a>
@@ -309,71 +334,27 @@
             <div>
               <h4>Tecnologias</h4>
               <div class="tecnologias">
-                <span class="icons" id="react">React</span>
-                <span class="icons" id="js">JavaScript</span>
-                <span class="icons" id="express">Express</span>
-                <span class="icons" id="knex">Knex</span>
-                <span class="icons" id="mysql">MySql</span>
-                <span class="icons" id="jwt">Jsonwebtoken</span>
-                <span class="icons" id="env">DotEnv</span>
-                <span class="icons" id="bcrypt">Bcrypt</span>
-                <span class="icons" id="token">express-bearer-token</span>
-                <span class="icons" id="swagger">Swagger</span>
+                <span class="icons react">React</span>
+                <span class="icons js">JavaScript</span>
+                <span class="icons express">Express</span>
+                <span class="icons knex">Knex</span>
+                <span class="icons mysql">MySql</span>
+                <span class="icons jwt">Jsonwebtoken</span>
+                <span class="icons env">DotEnv</span>
+                <span class="icons bcrypt">Bcrypt</span>
+                <span class="icons token">express-bearer-token</span>
+                <span class="icons swagger">Swagger</span>
               </div>
             </div>
           </div>
         </div>
         <div>
           <button class="btn btn_git">
-            <a style="text-decoration: none" href="https://github.com/Cassio-Ares/api_gym.git" target="_blank">
-              <span class="btn_Skew"></span>
-              <span class="btn_text"> GitHub</span>
-            </a>
-          </button>
-        </div>
-      </div>
-
-      <div class="project_hideRev">
-        <div class="container_projects">
-          <div class="projects">
-            <img
-              class="img_projects"
-              src="./public/imgProjects/api_ecom.gif"
-              alt=""
-            />
-          </div>
-          <div class="description_project">
-            <h3 class="title">API de e-commerce com MongoDB</h3>
-            <p class="description">
-              Uma API para o backend de e-commerce completa e segura usando
-              MongoDB com Mongoose, bcrypt e JSON Web Token (JWT). A
-              documentação foi elaborada com Swagger para uma integração fácil e
-              intuitiva. No painel administrativo, é possível cadastrar e
-              precificar produtos, além de gerenciar listas de compra. Para os
-              clientes, a API proporciona uma experiência fluida com busca de
-              produtos, gerenciamento de listas de compra, seleção de formas de
-              pagamento e acompanhamento do status de envio.
-            </p>
-            <div>
-              <h4>Tecnologias</h4>
-              <div class="tecnologias">
-                <span class="icons" id="react">React</span>
-                <span class="icons" id="js">JavaScript</span>
-                <span class="icons" id="express">Express</span>
-                <span class="icons" id="nodemon">Nodemon</span>
-                <span class="icons" id="mongodb">MongoDB</span>
-                <span class="icons" id="mongoose">Mongoose</span>
-                <span class="icons" id="jwt">Jsonwebtoken</span>
-                <span class="icons" id="env">DotEnv</span>
-                <span class="icons" id="bcrypt">Bcrypt</span>
-                <span class="icons" id="swagger">Swagger</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <button class="btn btn_git">
-            <a style="text-decoration: none" href="https://github.com/Cassio-Ares/back_end_ecommerc.git" target="_blank">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/api_gym.git"
+              target="_blank"
+            >
               <span class="btn_Skew"></span>
               <span class="btn_text"> GitHub</span>
             </a>
@@ -382,21 +363,140 @@
       </div>
 
       <button class="btn hide" id="pgProjects">
-        <a style="text-decoration: none" href="./projects.html">
+        <a style="text-decoration: none" href="./projectsBack.html">
           <span class="btn_Skew"></span>
-          <span class="btn_text"><strong>+</strong> projetos</span>
+          <span class="btn_text"><strong>+</strong> Projetos Back-End</span>
+        </a>
+      </button>
+
+      <div class="project_hide">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/three.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">
+              Projeto para estudo e prática de desenvolvimento 3D
+            </h3>
+            <p class="description">
+              Este projeto está sendo criado para estudar, praticar e aprimorar
+              meus conhecimentos em desenvolvimento 3D com THREE.js e
+              react-three/fiber. Através dele, quero explorar desde o básico até
+              técnicas avançadas, desenvolvendo elementos tridimensionais e
+              animações para consolidar minhas habilidades nessa área.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons react">React</span>
+                <span class="icons js">JavaScript</span>
+                <span class="icons css">Css</span>
+                <span class="icons three">THREE.js</span>
+                <span class="icons threeFiber">React-three-fiber</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn_git">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/three_d.git"
+              target="_blank"
+            >
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+          <button class="btn btn_site">
+            <a
+              style="text-decoration: none"
+              href="https://three-d-wheat.vercel.app/"
+              target="_blank"
+            >
+              <span class="btn_Skew"></span>
+              <span class="btn_text">Site</span>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="project_hide">
+        <div class="container_projects">
+          <div class="projects_mobile">
+            <img
+              class="img_mobile"
+              src="./public/imgProjects/myMoney.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">
+              Projeto para estudo e prática de desenvolvimento 3D
+            </h3>
+            <p class="description">
+              App desenvolvido com React Native, Material UI e TypeScript. Registre facilmente entradas e saídas
+              de dinheiro, visualize seu saldo em tempo real e tenha o controle total sobre suas finanças. 
+              Com o poder do Expo, aproveite uma experiência fluida e intuitiva em qualquer dispositivo mobile.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons react-native">React-native</span>
+                <span class="icons expo_go">Expo/Expo Go</span>
+                <span class="icons ts">Typescript</span>
+                 <span class="icons react-navigation">react-navigation</span>
+                <span class="icons material">Material-UI</span>
+                <span class="icons style">Styled-components</span>
+                <span class="icons axios">Axios</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn_git">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/app_my_money.git"
+              target="_blank"
+            >
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <button class="btn hide" id="pgProjects">
+        <a style="text-decoration: none" href="./projectsMobile.html">
+          <span class="btn_Skew"></span>
+          <span class="btn_text"><strong>+</strong> Projetos Mobile</span>
         </a>
       </button>
     </main>
+
     <footer id="footer" class="hide">
       <div id="footer_icons">
-        <a class="icon_link" target="_blank" href="https://github.com/Cassio-Ares"
+        <a
+          class="icon_link"
+          target="_blank"
+          href="https://github.com/Cassio-Ares"
           ><img class="icon_footer" src="./public/icons/github.svg" alt=""
         /></a>
-        <a class="icon_link"  target="_blank" href="https://www.linkedin.com/in/cassio-tadeu-da-rosa-silva/"
+        <a
+          class="icon_link"
+          target="_blank"
+          href="https://www.linkedin.com/in/cassio-tadeu-da-rosa-silva/"
           ><img class="icon_footer" src="./public/icons/linkedin.svg" alt=""
         /></a>
-        <a class="icon_link"  target="_blank" href="https://wa.me/5551993103664?text=Ol%C3%A1,%20tudo%20bem?%0A%20Vamos%20construir%20algo%20incr%C3%ADvel%20juntos!"
+        <a
+          class="icon_link"
+          target="_blank"
+          href="https://wa.me/5551993103664?text=Ol%C3%A1,%20tudo%20bem?%0A%20Vamos%20construir%20algo%20incr%C3%ADvel%20juntos!"
           ><img class="icon_footer" src="./public/icons/whatsapp.svg" alt=""
         /></a>
       </div>
