@@ -15,13 +15,13 @@ export const mockProjBack = [
                 <span class="icons jwt">Jsonwebtoken</span>
                 <span class="icons env">DotEnv</span>
                 <span class="icons bcrypt">Bcrypt</span>
-                <span class="icons swagger">Swagger</span>`
+                <span class="icons swagger">Swagger</span>`,
     ],
     link_do_git: "https://github.com/Cassio-Ares/back_end_ecommerc.git",
   },
   {
     id: 2,
-    imagem: "api_biblio_mongo.svg",
+    imagem: "apiLibrary.gif",
     name: "Api de uma Livraria com MongoDB",
     description:
       "API de uma biblioteca montada basicamente para administrar, onde você pode cadastrar usuário, fazer login, cadastrar, buscar, listar, editar e deletar livros.",
@@ -42,14 +42,18 @@ export const mockProjBack = [
   },
   {
     id: 3,
-    imagem: "api_biblio_sql.svg",
+    imagem: "apiLibrarySql.gif",
     name: "Api de uma Livraria com SQL",
     description:
       "API de uma biblioteca onde você pode  cadastrar, buscar, listar, editar e deletar livros.",
     technology: [
-      `<span class="icons express">Express</span>
+      ` <span class="icons react">React</span>
+        <span class="icons js">JavaScript</span>
+        <span class="icons express">Express</span>
        <span class="icons mysql">MySql</span>
-      `
+        <span class="icons nodemon">Nodemon</span>
+         <span class="icons env">DotEnv</span>
+      `,
     ],
     link_do_git: "https://github.com/Cassio-Ares/back_biblioteca_com_SQL",
   },

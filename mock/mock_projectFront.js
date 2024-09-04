@@ -10,6 +10,7 @@ export const mockProjFront = [
       `,
     ],
     link_do_git: "https://github.com/Cassio-Ares/app_my_money.git",
+    link_do_site: "https://site-fanta.vercel.app/",
    },
    {
     id: 2,
@@ -57,7 +58,6 @@ export const mockProjFront = [
     ],
     link_do_git:
       "https://github.com/Cassio-Ares/lp_frontendmentor_practice_3.git",
-    link_do_site: "https://lp-frontendmentor-practice-3.vercel.app/",
   },
   {
     id: 5,
