@@ -29,7 +29,7 @@ html, body{
   font-size: 20px;
 }
 
-a:hover{
+li :hover{
   text-decoration: underline 2px;
 }
 

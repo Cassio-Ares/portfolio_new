@@ -1,19 +1,17 @@
-import { mockProjFront } from "../mock/mock_projectFront.js";
+import { mockProjectCssThree } from "../mock/mock_projectCssThree.js";
 
 window.addEventListener("load", () => {
-  const pg_project = document.getElementById("pg_projectsFront");
+  const pg_project = document.getElementById("pg_projectsCssThree");
 
-  mockProjFront.forEach((project) => {
-    const projectDiv = document.createElement("div"); // Criação do container do projeto
-
-    const containerProjects = document.createElement("div"); // Container dos detalhes do projeto
+  mockProjectCssThree.forEach((project) => {
+    const projectDiv = document.createElement("div");
+    const containerProjects = document.createElement("div");
     containerProjects.classList.add("container_projects");
 
-    const projectsDiv = document.createElement("div"); // Container da img
+    const projectsDiv = document.createElement("div");
     projectsDiv.classList.add("projects");
 
-    let img = document.createElement("img"); // Imagem padrão
-
+    let img = document.createElement("img");
     img.classList.add("img_projects");
 
     img.src = `./public/imgProjects/${project.imagem}`;
@@ -22,12 +20,12 @@ window.addEventListener("load", () => {
     projectsDiv.appendChild(img);
     containerProjects.appendChild(projectsDiv);
 
-    const descriptionDiv = document.createElement("div"); // Div da descrição do projeto
+    const descriptionDiv = document.createElement("div");
     descriptionDiv.classList.add("description_project");
 
     const title = document.createElement("h3");
     title.classList.add("title");
-    title.textContent = project.name;//Adiciona ou recupera apenas texto puro
+    title.textContent = project.name;
 
     const description = document.createElement("p");
     description.classList.add("description");
@@ -36,13 +34,13 @@ window.addEventListener("load", () => {
     descriptionDiv.appendChild(title);
     descriptionDiv.appendChild(description);
 
-    const techTitle = document.createElement("h4"); // Tecnologias
+    const techTitle = document.createElement("h4");
     techTitle.textContent = "Tecnologias";
 
     const tecnologiasDiv = document.createElement("div");
     tecnologiasDiv.classList.add("tecnologias");
 
-    tecnologiasDiv.innerHTML = project.technology;
+    tecnologiasDiv.innerHTML = project.tecnologias;
 
     descriptionDiv.appendChild(techTitle);
     descriptionDiv.appendChild(tecnologiasDiv);
@@ -52,9 +50,8 @@ window.addEventListener("load", () => {
 
     pg_project.appendChild(projectDiv);
 
-    const buttonContainer = document.createElement("div"); // Container para os botões
+    const buttonContainer = document.createElement("div");
 
-    // Verificação condicional para link_do_git
     if (project.link_do_git) {
       const gitButton = document.createElement("button");
       gitButton.classList.add("btn", "btn_git");
@@ -84,9 +81,9 @@ window.addEventListener("load", () => {
       siteLink.target = "_blank";
 
       siteLink.innerHTML = `
-        <span class="btn_Skew"></span>
-        <span class="btn_text">Site</span>
-      `;
+      <span class="btn_Skew"></span>
+      <span class="btn_text">Site</span>
+    `;
 
       siteButton.appendChild(siteLink);
       buttonContainer.appendChild(siteButton);

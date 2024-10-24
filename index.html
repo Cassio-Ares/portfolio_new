@@ -12,6 +12,7 @@
     <!--js-->
     <script src="./js/darkLigth.js"></script>
     <script src="./js/movimento_container.js"></script>
+    <script src="./js/dropdown.js"></script>
     <!--styles-->
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -23,17 +24,28 @@
   </head>
   <body class="dark">
     <nav id="nav">
-      <div id="nav_a">
-        <a href="#">inicio</a>
-        <a href="#skill_container">skills</a>
-        <a href="#projects">projetos</a>
-        <a href="#footer">contato</a>
-      </div>
-      <div id="nav_btn">
-        <button id="toggle_btn">
-          <img id="img_toggle" src="./public/icons/sun.svg" alt="toogle" />
-        </button>
-      </div>
+        <div id="nav_a">
+            <ul>
+                <li><a href="#">inicio</a></li>
+                <li><a href="#skill_container">skills</a></li>
+                <li id="dropDown">
+                    <a href="#" id="projetos">Projetos</a>
+                    <ul class="dropdown-content" id="project-list">
+                      <li><a href="#front-end">Front-End</a></li>
+                      <li><a href="#back-end">Back-End</a></li>
+                      <li><a href="#full-stack">Full-Stack</a></li>
+                      <li><a href="#mobile">Mobile</a></li>
+                      <li><a href="#css-threejs">CSS e Three.js</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">contato</a></li>
+            </ul>
+        </div>
+        <div id="nav_btn">
+            <button id="toggle_btn">
+                <img id="img_toggle" src="./public/icons/sun.svg" alt="toogle" />
+            </button>
+        </div>
     </nav>
     <main class="main">
       <!--about-->
@@ -190,12 +202,23 @@
               <figcaption>MySql</figcaption>
             </figure>
           </div>
+          <div class="figure_skills hideSkillRev">
+            <figure>
+              <img
+                id="skill_react"
+                class="img_skills"
+                src="./public/skills/react.png"
+                alt="JavaScript"
+              />
+              <figcaption>React Native</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
 
       <!--projects-->
       <div id="projects"></div>
-      <div class="project_hide">
+      <div id="front-end" class="project_hide">
         <div class="container_projects">
           <div class="projects">
             <img
@@ -260,58 +283,7 @@
         </a>
       </button>
 
-      <div class="project_hideRev">
-        <div class="container_projects">
-          <div class="projects">
-            <img
-              class="img_projects"
-              src="./public/imgProjects/repositCss.gif"
-              alt=""
-            />
-          </div>
-          <div class="description_project">
-            <h3 class="title">Bem-vindo a meu repositório de Css e Sass</h3>
-            <p class="description">
-              Site criado para demonstrar e proporcionar acesso a um repositório
-              contendo diversas criações e animações em CSS e SASS. E junto a
-              isso me ajudar a praticar e melhorar meus conhecimentos.
-            </p>
-            <div>
-              <h4>Tecnologias</h4>
-              <div class="tecnologias">
-                <span class="icons react">React</span>
-                <span class="icons ts">Typescript</span>
-                <span class="icons css">Css</span>
-                <span class="icons sass">Sass</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <button class="btn btn_git">
-            <a
-              style="text-decoration: none"
-              href="https://github.com/Cassio-Ares/project_to_practice.git"
-              target="_blank"
-            >
-              <span class="btn_Skew"></span>
-              <span class="btn_text"> GitHub</span>
-            </a>
-          </button>
-          <button class="btn btn_site">
-            <a
-              style="text-decoration: none"
-              href="https://project-to-practice.vercel.app/"
-              target="_blank"
-            >
-              <span class="btn_Skew"></span>
-              <span class="btn_text">Site</span>
-            </a>
-          </button>
-        </div>
-      </div>
-
-      <div class="project_hide">
+      <div id="back-end"  class="project_hide">
         <div class="container_projects">
           <div class="projects">
             <img
@@ -369,34 +341,39 @@
         </a>
       </button>
 
-      <div class="project_hide">
+      <div id="full-stack"  class="project_hide">
         <div class="container_projects">
           <div class="projects">
             <img
               class="img_projects"
-              src="./public/imgProjects/three.gif"
+              src="./public/imgProjects/apptest.gif"
               alt=""
             />
           </div>
           <div class="description_project">
-            <h3 class="title">
-              Projeto para estudo e prática de desenvolvimento 3D
-            </h3>
+            <h3 class="title">Api de gestão de Academia com MySql</h3>
             <p class="description">
-              Este projeto está sendo criado para estudar, praticar e aprimorar
-              meus conhecimentos em desenvolvimento 3D com THREE.js e
-              react-three/fiber. Através dele, quero explorar desde o básico até
-              técnicas avançadas, desenvolvendo elementos tridimensionais e
-              animações para consolidar minhas habilidades nessa área.
+              Uma API para o backend de um site de gestão de academia utilizando
+              Express, Knex com MySQL2, bcrypt e JWT. A API gerencia alunos,
+              planos e exercícios de forma eficiente, com segurança garantida
+              por criptografia de senhas e autenticação JWT. A documentação é
+              detalhada e intuitiva, facilitando a integração e o uso da API por
+              desenvolvedores externos. Essa solução assegura uma gestão eficaz
+              e segura das operações de academias
             </p>
             <div>
               <h4>Tecnologias</h4>
               <div class="tecnologias">
                 <span class="icons react">React</span>
                 <span class="icons js">JavaScript</span>
-                <span class="icons css">Css</span>
-                <span class="icons three">THREE.js</span>
-                <span class="icons threeFiber">React-three-fiber</span>
+                <span class="icons express">Express</span>
+                <span class="icons knex">Knex</span>
+                <span class="icons mysql">MySql</span>
+                <span class="icons jwt">Jsonwebtoken</span>
+                <span class="icons env">DotEnv</span>
+                <span class="icons bcrypt">Bcrypt</span>
+                <span class="icons token">express-bearer-token</span>
+                <span class="icons swagger">Swagger</span>
               </div>
             </div>
           </div>
@@ -405,27 +382,24 @@
           <button class="btn btn_git">
             <a
               style="text-decoration: none"
-              href="https://github.com/Cassio-Ares/three_d.git"
+              href="https://github.com/Cassio-Ares/api_gym.git"
               target="_blank"
             >
               <span class="btn_Skew"></span>
               <span class="btn_text"> GitHub</span>
             </a>
           </button>
-          <button class="btn btn_site">
-            <a
-              style="text-decoration: none"
-              href="https://three-d-wheat.vercel.app/"
-              target="_blank"
-            >
-              <span class="btn_Skew"></span>
-              <span class="btn_text">Site</span>
-            </a>
-          </button>
         </div>
       </div>
 
-      <div class="project_hide">
+      <button class="btn hide" id="pgProjects">
+        <a style="text-decoration: none" href="./projectsBack.html">
+          <span class="btn_Skew"></span>
+          <span class="btn_text"><strong>+</strong> Projetos Full-Stack</span>
+        </a>
+      </button>
+
+      <div id="mobile" class="project_hide">
         <div class="container_projects">
           <div class="projects_mobile">
             <img
@@ -439,9 +413,11 @@
               Projeto para estudo e prática de desenvolvimento 3D
             </h3>
             <p class="description">
-              App desenvolvido com React Native, Material UI e TypeScript. Registre facilmente entradas e saídas
-              de dinheiro, visualize seu saldo em tempo real e tenha o controle total sobre suas finanças. 
-              Com o poder do Expo, aproveite uma experiência fluida e intuitiva em qualquer dispositivo mobile.
+              App desenvolvido com React Native, Material UI e TypeScript.
+              Registre facilmente entradas e saídas de dinheiro, visualize seu
+              saldo em tempo real e tenha o controle total sobre suas finanças.
+              Com o poder do Expo, aproveite uma experiência fluida e intuitiva
+              em qualquer dispositivo mobile.
             </p>
             <div>
               <h4>Tecnologias</h4>
@@ -449,7 +425,7 @@
                 <span class="icons react-native">React-native</span>
                 <span class="icons expo_go">Expo/Expo Go</span>
                 <span class="icons ts">Typescript</span>
-                 <span class="icons react-navigation">react-navigation</span>
+                <span class="icons react-navigation">react-navigation</span>
                 <span class="icons material">Material-UI</span>
                 <span class="icons style">Styled-components</span>
                 <span class="icons axios">Axios</span>
@@ -477,8 +453,66 @@
           <span class="btn_text"><strong>+</strong> Projetos Mobile</span>
         </a>
       </button>
-    </main>
+    
 
+      <div id="css-threejs" class="project_hideRev">
+        <div class="container_projects">
+          <div class="projects">
+            <img
+              class="img_projects"
+              src="./public/imgProjects/repositCss.gif"
+              alt=""
+            />
+          </div>
+          <div class="description_project">
+            <h3 class="title">Bem-vindo a meu repositório de Css e Sass</h3>
+            <p class="description">
+              Site criado para demonstrar e proporcionar acesso a um repositório
+              contendo diversas criações e animações em CSS e SASS. E junto a
+              isso me ajudar a praticar e melhorar meus conhecimentos.
+            </p>
+            <div>
+              <h4>Tecnologias</h4>
+              <div class="tecnologias">
+                <span class="icons react">React</span>
+                <span class="icons js">JavaScript</span>
+                <span class="icons css">Css</span>
+                <span class="icons sass">Sass</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <button class="btn btn_git">
+            <a
+              style="text-decoration: none"
+              href="https://github.com/Cassio-Ares/project_to_practice.git"
+              target="_blank"
+            >
+              <span class="btn_Skew"></span>
+              <span class="btn_text"> GitHub</span>
+            </a>
+          </button>
+          <button class="btn btn_site">
+            <a
+              style="text-decoration: none"
+              href="https://project-to-practice.vercel.app/"
+              target="_blank"
+            >
+              <span class="btn_Skew"></span>
+              <span class="btn_text">Site</span>
+            </a>
+          </button>
+        </div>
+      </div>
+
+      <button class="btn hide" id="pgProjects">
+        <a style="text-decoration: none" href="./projectsCSSThree.html">
+          <span class="btn_Skew"></span>
+          <span class="btn_text"><strong>+</strong> Projetos Css e Three.js</span>
+        </a>
+      </button>
+    </main>
     <footer id="footer" class="hide">
       <div id="footer_icons">
         <a
